@@ -1,9 +1,12 @@
 import React from "react";
+import AnimalsList from "../Animals/AnimalsList";
+import NewAnimal from "../Animals/NewAnimal";
 
 const Main = () => {
   return (
     <main>
-      <p>Main area </p>
+      <AnimalsList />
+      <NewAnimal />
     </main>
   );
 };
