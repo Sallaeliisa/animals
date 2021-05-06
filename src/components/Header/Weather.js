@@ -10,7 +10,7 @@ const params = {
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setIsLoading(true);

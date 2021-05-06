@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 const AnimalsCard = ({name, aclass, desc, img, link}) => {
@@ -11,8 +12,11 @@ const AnimalsCard = ({name, aclass, desc, img, link}) => {
             <img src={img}></img>
             <h1>{name}</h1>
             <p>{aclass}</p>
+
             <p>{truncate(desc, 15)} ...</p>
-            <a href={link}>Read more</a>
+
+    <Link to={`/${link}`}>Read more</Link>
+            {/* <a href={link}>Read more</a> */}{''}
         </div>
     );
 };
